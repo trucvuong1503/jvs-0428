@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+</head>
+<body>
+    <h3>変数の演算</h3>
+    変値１、変値２を蓮続して入力してくだい<br>
+    変値aとbの足し算の計算結果を表示します。<br>
+    <button onclick="tashizan()">足し算</button>
+    <script>
+        let a,b,kai;
+        function tashizan(){
+            let a=parseInt(prompt('変値１',''));
+            let b=parseInt(prompt('変値2',''));
+            kai=a+b;
+            alert("答えは"+kai+"です");
+        }
+    </script>
+</body>
+</html>

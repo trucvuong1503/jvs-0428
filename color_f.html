@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="abc">
+    <h1>文字サイズの変更</h1>
+    <p>以下のボタンをクリックするとホームベージの文字色を変更できます</p>
+    <button onclick="document.getElementById('abc').style.color='red';">赤色</button>
+    <button onclick="document.getElementById('abc').style.color='green';">緑</button>
+    <button onclick="document.getElementById('abc').style.color='yellow';">金色</button>
+    <button onclick="document.getElementById('abc').style.color='blue';">青色</button>
+    <button onclick="document.getElementById('abc').style.color='orange';">オレンジ</button>
+    <button onclick="document.getElementById('abc').style.color='pink';">ピンク</button>
+    <hr>
+    <h1>背景色の変更</h1>
+    <button onclick="document.getElementById('abc').style.backgroundColor='red';">赤色</button>
+    <button onclick="document.getElementById('abc').style.backgroundColor='green';">緑</button>
+    <button onclick="document.getElementById('abc').style.backgroundColor='yellow';">金色</button>
+    <button onclick="document.getElementById('abc').style.backgroundColor='blue';">青色</button>
+    <button onclick="document.getElementById('abc').style.backgroundColor='orange';">オレンジ</button>
+    <button onclick="document.getElementById('abc').style.backgroundColor='pink';">ピンク</button>
+    <hr>
+    <button onclick="syokika()">初期化</button>
+    <script>
+        function syokika() {
+          let syokika = document.getElementById('abc');
+          syokika.style.color = 'black';
+          syokika.style.backgroundColor = 'white';
+        }
+        </script>
+</body>
+</html>

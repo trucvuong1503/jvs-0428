@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+</head>
+<body>
+    <h3>BMI</h3>
+    身長＝１７０cm、体重＝７０kgのBMIを標準体重を計算します<br>
+    BMIは体重/（身長*身長）＊10000<br>
+    標準体重は（身長−100）＊０.９<br>
+    <button onclick="bmi()">BMI</button>
+    <button onclick="hyou()">標準体重</button>
+    <div id="b">ここはBMIが表示されます</div>
+    <div id="h">ここは標準体重が表示されます</div>
+    <script>
+        let shin,tai,ket,ka;
+        function bmi(){
+            let shin=parseInt(prompt('身長',''));
+            let tai=parseInt(prompt('体重',''));
+            ket=tai/(shin*shin)*10000;
+            let anserBox = document.getElementById('b');
+            anserBox.textContent = "あなたのBMIは"+ket+"です";
+        }
+        function hyou(){
+            let shin=parseInt(prompt('身長',''));
+            let tai=parseInt(prompt('体重',''));
+            ka=(shin-100)*0.9;
+            let anserBox = document.getElementById('h');
+            anserBox.textContent = "標準体重は"+ka+"です";
+        }
+    </script>
+</body>
+</html>
